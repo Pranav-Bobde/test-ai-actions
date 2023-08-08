@@ -27,5 +27,5 @@ jobs:
         # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run with streamlit
       run: |
-        pipenv shell 3.9 --no-pty
+        pipenv shell --python 3.9 --fancy
         streamlit run app.py
